@@ -1,29 +1,16 @@
-# SDC-UI Style-Guide and Components
+# ONAP-UI React Components
 
 This project aims to create a unified UI styled components for multiple development teams who work on the same web-based applications. 
-This repository contains the definition of all the basic widgets and reusable controllers. 
+This repository contains the definition of all the basic components implemented in React.
 
-	
+In order to use the accompanied styles, you would need to also install onap-ui-common.
+
 ### Usage
-
-#### Link the library's CSS file
-###### SCSS
-```scss
-@import "path_to_node_modules/sdc-ui/css/style.css";
-```
-###### HTML
-```html
-<link rel="stylesheet" href="path_to_node_modules/sdc-ui/css/style.css">
-```
-###### As Module (Using loading tool, i.e. [Webpack](https://webpack.github.io/))
-```js
-import 'sdc-ui/css/style.css';
-```
 
 #### React Code examples
 ###### Importing particular component
 ```js
-import Button from 'sdc-ui/lib/react/Button.js';
+import Button from 'onap-ui-react/lib/react/Button.js';
 
 // inside component rendering...
 render(){
@@ -34,7 +21,7 @@ render(){
 ```
 ###### Importing particular component from the react library
 ```js
-import {Button} from 'sdc-ui/lib/react';
+import {Button} from 'onap-ui-react/lib/react';
 
 // inside component rendering...
 render(){
@@ -45,17 +32,17 @@ render(){
 ```
 ###### Importing the entire library
 ```js
-import SDCUI from 'sdc-ui';
+import ONAPUIReact from 'onap-ui-react';
 
 // inside component rendering...
 render(){
 	return (
-		<SDCUI.React.Button>I am still a Button</SDCUI.React.Button>
+		<ONAPUIReact.Button>I am still a Button</ONAPUIReact.Button>
 	);
 }
 ```
 ### Running storybook
-The components in this library are displayed via [storybook](https://github.com/storybooks/storybook). Head to [http://onap-sdc.github.io/sdc-ui](http://onap-sdc.github.io/sdc-ui) to see the components that are in `master`.
+The components in this library are displayed via [storybook](https://github.com/storybooks/storybook). Head to [http://onap-sdc.github.io/onap-ui-react](http://onap-sdc.github.io/onap-ui-react) to see the components that are in `master`.
 
 While developing, just run `npm run storybook` in your terminal to launch a local storybook server where you can see your changes. For deploying storybook to your own fork repository, refer to the guides section below.
 
