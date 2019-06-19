@@ -1,6 +1,7 @@
 {
   "name": "onap-ui-react",
   "version": "0.0.1",
+  "main": "src/components/index.js",
   "description": "This project aims to create a unified UI styled components for multiple development teams who work on the same web-based applications.",
   "scripts": {
     "build-common": "npm run build-icons && node-sass --include-path scss src/style/style.scss css/style.css",
