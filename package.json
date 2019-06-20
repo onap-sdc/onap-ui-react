@@ -1,7 +1,7 @@
 {
   "name": "onap-ui-react",
-  "version": "0.0.1",
-  "main": "src/components/index.js",
+  "version": "0.0.3",
+  "main": "index.js",
   "description": "This project aims to create a unified UI styled components for multiple development teams who work on the same web-based applications.",
   "scripts": {
     "build-common": "npm run build-icons && node-sass --include-path scss src/style/style.scss css/style.css",
@@ -10,7 +10,7 @@
     "test-dev": "jest --watch",
     "test-coverage": "jest --coverage && start coverage/lcov-report/index.html",
     "prebuild-clean": "rimraf lib",
-    "build-react": "babel src/components -d lib/components && babel src/utils -d lib/utils",
+    "build-react": "babel main.js -o index.js && babel src/components -d lib/components && babel src/utils -d lib/utils",
     "postbuild-clean": "rimraf build",
     "build": "npm run prebuild-clean && npm run build-common && npm run build-react && npm run postbuild-clean",
     "storybook": "npm run build-common && start-storybook -p 6006",
