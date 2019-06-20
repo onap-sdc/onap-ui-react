@@ -1,4 +1,9 @@
+# Build
 /dist
+index.js
+
+# Generated files
+src/utils/iconMap.js
 
 # IDEA files
 .idea
