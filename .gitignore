@@ -13,11 +13,12 @@ Thumbs.db
 .vscode
 .history
 package-lock.json
+
 # build files
 lib
 css
 .out
-src/react/utils/iconMap.js
+src/utils/iconMap.js
 
 #coverage files
 coverage

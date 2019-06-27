@@ -1,6 +1,7 @@
 {
   "name": "onap-ui-react",
-  "version": "0.0.1",
+  "version": "0.1.1",
+  "main": "index.js",
   "description": "This project aims to create a unified UI styled components for multiple development teams who work on the same web-based applications.",
   "scripts": {
     "build-common": "npm run build-icons && node-sass --include-path scss src/style/style.scss css/style.css",
@@ -9,31 +10,32 @@
     "test-dev": "jest --watch",
     "test-coverage": "jest --coverage && start coverage/lcov-report/index.html",
     "prebuild-clean": "rimraf lib",
-    "build-react": "babel src/components -d lib/components && babel src/utils -d lib/utils",
+    "build-react": "babel main.js -o index.js && babel src/components -d lib/components && babel src/utils -d lib/utils",
     "postbuild-clean": "rimraf build",
     "build": "npm run prebuild-clean && npm run build-common && npm run build-react && npm run postbuild-clean",
     "storybook": "npm run build-common && start-storybook -p 6006",
-    "build-storybook": "npm run build-common && build-storybook -c .storybook -o .out/react && ncp utils/index-for-gh-pages.html .out/index.html && ncp utils/main-page.html .out/main-page.html && ncp assets .out/assets",
-    "build-gh-pages": "npm run build-storybook && ncp utils/index-for-gh-pages.html .out/index.html && ncp utils/main-page.html .out/main-page.html && ncp assets .out/assets",
+    "build-storybook": "npm run build-common && build-storybook -c .storybook -o .out/react && ncp utils/index-for-gh-pages.html .out/index.html && ncp utils/main-page.html .out/main-page.html",
+    "build-gh-pages": "npm run build-storybook && ncp utils/index-for-gh-pages.html .out/index.html && ncp utils/main-page.html .out/main-page.html",
     "lint": "eslint \"src/components/**/*.js\" --ignore-pattern \"src/utils/*\"",
     "lint-fix": "npm run lint -- --fix"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/onap-sdc/sdc-ui.git"
+    "url": "git+https://github.com/onap-sdc/onap-ui-react.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/onap-sdc/sdc-ui/issues"
+    "url": "https://github.com/onap-sdc/onap-ui-react/issues"
   },
   "files": [
     "lib",
     "css",
     "assets",
+    "index.js",
     "README.md"
   ],
-  "homepage": "https://github.com/onap-sdc/sdc-ui#readme",
+  "homepage": "https://github.com/onap-sdc/onap-ui-react#readme",
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-eslint": "^7.2.3",
@@ -41,7 +43,7 @@
     "babel-preset-env": "^1.4.0",
     "babel-preset-react": "^6.24.1",
     "babel-runtime": "^6.23.0",
-	"css-loader": "^0.28.0",
+    "css-loader": "^0.28.0",
     "enzyme": "^2.8.2",
     "eslint": "^3.19.0",
     "eslint-config-prettier": "^2.9.0",
@@ -57,14 +59,14 @@
     "react-test-renderer": "^15.5.4",
     "rimraf": "^2.6.2",
     "ncp": "^2.0.0",
-	"sass-loader": "^6.0.3",
-	"source-map-loader": "0.2.1",
+    "sass-loader": "^6.0.3",
+    "source-map-loader": "0.2.1",
     "style-loader": "^0.16.1",
     "uglify-js": "2.8.29"
   },
   "dependencies": {
     "@storybook/react": "^3.1.5",
-    "onap-ui-common" : "file:../../onap-ui-common/onap-ui-common/onap-ui-common-1.0.79.tgz",
+    "onap-ui-common" : "1.0.100",
     "http-loader": "0.0.1",
     "prop-types": "^15.6.0",
     "react": "15.6.2",
