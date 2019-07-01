@@ -1,30 +1,19 @@
 # ONAP-UI React Components
 
-This project aims to create a unified UI styled components for multiple development teams who work on the same web-based applications. 
-This repository contains the definition of all the basic components implemented in React.
+This project aims to create a unified UI of styled components for multiple development teams who work on the same web-based applications. 
+This repository contains the definitions of all the basic components implemented in React.
 
-In order to use the accompanied styles, you would need to also install onap-ui-common.
+In order to use the accompanying styles, you must install onap-ui-common!
 
 ### Usage
 
 #### React Code examples
-###### Importing particular component
+###### Importing a component
 ```js
-import Button from 'onap-ui-react/lib/react/Button.js';
+import { Button } from 'onap-ui-react';
 
 // inside component rendering...
-render(){
-	return (
-		<Button>I am a Button</Button>
-	);
-}
-```
-###### Importing particular component from the react library
-```js
-import {Button} from 'onap-ui-react/lib/react';
-
-// inside component rendering...
-render(){
+render() {
 	return (
 		<Button>I am a Button</Button>
 	);
@@ -32,12 +21,12 @@ render(){
 ```
 ###### Importing the entire library
 ```js
-import ONAPUIReact from 'onap-ui-react';
+import OnapUI from 'onap-ui-react';
 
 // inside component rendering...
 render(){
 	return (
-		<ONAPUIReact.Button>I am still a Button</ONAPUIReact.Button>
+		<OnapUI.Button>I am still a Button</OnapUI.Button>
 	);
 }
 ```
