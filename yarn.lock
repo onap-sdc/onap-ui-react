@@ -5744,9 +5744,9 @@ lodash.uniq@^4.5.0:
   integrity sha1-0CJTc662Uq3BvILklFM5qEJ1R3M=
 
 lodash@^4.0.0, lodash@^4.17.0, lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.3, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.2.1, lodash@^4.3.0, lodash@~4.17.10:
-  version "4.17.11"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
-  integrity sha512-cQKh8igo5QUhZ7lg38DYWAxMvjSAKG0A8wGSVimP07SIUEK2UO+arSRKbRZWtelMtN5V0Hkwh5ryOto/SshYIg==
+  version "4.17.15"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
+  integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
 
 longest@^1.0.1:
   version "1.0.1"
@@ -6507,10 +6507,10 @@ on-finished@~2.3.0:
   dependencies:
     ee-first "1.1.1"
 
-onap-ui-common@1.0.86:
-  version "1.0.86"
-  resolved "https://registry.yarnpkg.com/onap-ui-common/-/onap-ui-common-1.0.86.tgz#60ed27a1b349cb8717a4f66bc599a5da98ce92e0"
-  integrity sha512-27Mvn67/3LdpEUN9ihCrdNmmLWgEChWd5mtPGIS9N2Rcuhoy5naA4Fncut1NkLyFJJJ5B/HAg8+7AHIY1OqXdQ==
+onap-ui-common@1.0.101:
+  version "1.0.101"
+  resolved "https://registry.yarnpkg.com/onap-ui-common/-/onap-ui-common-1.0.101.tgz#c79b8fb903b7d2d3f959e3b5c27b561b563d961b"
+  integrity sha512-wedlorlDeGCyr/L7TzZr6UgOqpQTe5RMwh5z2lpNMHapsRx9b5gHS7QSbjNST+5zb7enGpRzjH/bYV1wn4nIPw==
 
 once@^1.3.0, once@^1.3.1, once@^1.4.0:
   version "1.4.0"
